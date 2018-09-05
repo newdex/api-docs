@@ -48,7 +48,7 @@ Name | Data type | Description
 ------------ | ------------ | ------------
 symbol | string | 
 last | double | latest price
-change | double | the price change from 08:00 GMT
+change | double | the price changes from 08:00 GMT
 high | double | highest price
 low | double | lowest price
 amount | double | amount of this currency
