@@ -24,7 +24,7 @@ Response: Array
 
 
 Name | Data type | Description 
------------- | ------------ | ------------ | ------------ 
+------------ | ------------ | ------------
 symbol | string | 
 price_precision | int | 
 currency_precision | int | 
@@ -38,14 +38,14 @@ Request:
 
 
 Parameter | Data type | Description
------------- | ------------ | ------------ | ------------
+------------ | ------------ | ------------
 symbol | string | 
 
 Response: Object
 
 
 Name | Data type | Description
------------- | ------------ | ------------ | ------------
+------------ | ------------ | ------------
 symbol | string | 
 last | double | latest price
 change | double | the price change from 08:00 GMT
