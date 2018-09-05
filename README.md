@@ -63,13 +63,13 @@ Request:
 
 
 Parameter | Data type | Description
------------- | ------------ | ------------ | ------------
+------------ | ------------ | ------------
 symbol | string | 
 
 Response: Object
 
 
 Name | Data type | Description
------------- | ------------ | ------------ | ------------
+------------ | ------------ | ------------
 symbol | string | 
 price | double | latest price
