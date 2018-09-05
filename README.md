@@ -22,8 +22,8 @@ Request: None
 
 Response: Array
 
-Name | Data type | Description
------------- | ------------ | ------------ | ------------
+Name | Data type | Description 
+------------ | ------------ | ------------ | ------------ 
 symbol | string | 
 price_precision | int | 
 currency_precision | int | 
