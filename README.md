@@ -22,6 +22,7 @@ Request: None
 
 Response: Array
 
+
 Name | Data type | Description 
 ------------ | ------------ | ------------ | ------------ 
 symbol | string | 
@@ -35,11 +36,13 @@ Trade summary of a trading day for a symbol
 
 Request: 
 
+
 Parameter | Data type | Description
 ------------ | ------------ | ------------ | ------------
 symbol | string | 
 
 Response: Object
+
 
 Name | Data type | Description
 ------------ | ------------ | ------------ | ------------
@@ -51,17 +54,20 @@ low | double | lowest price
 amount | double | amount of this currency
 volume | double | volume of eos
 
+
 ## GET /v1/ticker/price
 
 The price of a symbol
 
 Request: 
 
+
 Parameter | Data type | Description
 ------------ | ------------ | ------------ | ------------
 symbol | string | 
 
 Response: Object
+
 
 Name | Data type | Description
 ------------ | ------------ | ------------ | ------------
