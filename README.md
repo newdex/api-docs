@@ -26,6 +26,8 @@ Response: Array
 Name | Data type | Description 
 ------------ | ------------ | ------------
 symbol | string | 
+contract | string | contract name
+currency | string | currency name
 price_precision | int | 
 currency_precision | int | 
 
@@ -47,6 +49,27 @@ Response: Object
 Name | Data type | Description
 ------------ | ------------ | ------------
 symbol | string | 
+contract | string | contract name
+currency | string | currency name
+last | double | latest price
+change | double | the price changes from 08:00 GMT
+high | double | highest price
+low | double | lowest price
+amount | double | amount of this currency
+volume | double | volume of eos
+
+## GET /v1/ticker/all
+
+Trade summary of a trading day for all symbols
+
+Request: None
+
+
+Name | Data type | Description
+------------ | ------------ | ------------
+symbol | string | 
+contract | string | contract name
+currency | string | currency name
 last | double | latest price
 change | double | the price changes from 08:00 GMT
 high | double | highest price
