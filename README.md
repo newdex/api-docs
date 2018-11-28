@@ -25,7 +25,7 @@ Response: Array
 
 Name | Data type | Description 
 ------------ | ------------ | ------------
-symbol | string | 
+symbol | string | for example. eosblackteam-black-eos
 contract | string | contract name
 currency | string | currency name
 price_precision | int | 
