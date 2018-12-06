@@ -10,7 +10,7 @@ https://api.newdex.io
 
 ### 申请APP_KEY
 
-Newdex的app_key需要和EOS账号绑定，详情请参考[申请Newdex交易行情API_KEY](/api-for-cn/signup_app_key.md)
+Newdex的api_key需要和EOS账号绑定，详情请参考[申请Newdex交易行情API_KEY](/api-for-cn/signup_app_key.md)
 
 ## REST行情、交易API
 
