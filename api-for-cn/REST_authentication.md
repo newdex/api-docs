@@ -9,7 +9,7 @@
 
 - 签名方法  用户计算签名的基于哈希的协议，我们使用 HmacSHA256。
 
-- 时间戳（timestamp） 您发出请求的时间 (UTC 时区) 。在查询请求中包含此值有助于防止第三方截取您的请求。时间戳是由13位数字组成的。
+- 时间戳（timestamp） 您发出请求的时间 (UTC 时区) 。在查询请求中包含此值有助于防止第三方截取您的请求。时间戳是由10位数字组成的。
 
 - 必选和可选参数 每个方法都有一组用于定义 API 调用的必需参数和可选参数。可以在每个方法的说明中查看这些参数及其含义。 请一定注意：对于GET请求，每个方法自带的参数都需要进行签名运算； 对于POST请求，每个方法自带的参数不进行签名认证，即POST请求中需要进行签名运算的只有api_key、timestamp两个参数，其它参数放在body中。
 
@@ -20,7 +20,7 @@
 https://api.newdex.io/v1/order/orders?
 api_key=abcdefghijk12345
 &symbol=eosblackteam-black-eos
-&timestamp=1544121678233
+&timestamp=1544121678
 &sign=calculated_value
 ```
 
@@ -37,18 +37,18 @@ https://api.huobi.pro/v1/order/orders?
 ```
 api_key: abcdefghijk12345
 symbol: eosblackteam-black-eos
-timestamp: 1544121678233
+timestamp: 1544121678
 ```
 - 按照以上顺序，将各参数使用字符’&’连接。
 ```
-api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678233
+api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678
 ```
 - 使用secret_key通过HmacSHA256签名，得到
 ```
-sign = SHA256('api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678233', secret_key);
+sign = SHA256('api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678', secret_key);
 ```
 
 - 最后将sign拼装回去， 最终，发送到服务器的 API 请求应该为：
 ```
-https://api.newdex.io/v1/order/orders?api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678233&sign=64位的签名hash
+https://api.newdex.io/v1/order/orders?api_key=abcdefghijk12345&symbol=eosblackteam-black-eos&timestamp=1544121678&sign=64位的签名hash
 ```
