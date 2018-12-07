@@ -8,7 +8,7 @@ Newdex是去中心化交易所，所使用的是EOS账户体系，所以您必�
 account: newdexiotest  
 email: test@newdex.io  
 使用上面信息组成链接，并请求：https://api.newdex.io/v1/api/generate?account=newdexiotest&email=test@newdex.io  
-结果如果返回  {"code":200,"result":"success"}，表示您已经生成了api_key及secret_key，并发送至您的邮箱（此接口，每账号1分钟内只允许调用一次）。
+结果如果返回  {"code":200,"data":"success"}，表示您已经生成了api_key及secret_key，并发送至您的邮箱（此接口，每账号1分钟内只允许调用一次）。
 
 ### 2、验证邮箱和EOS账号
 请登录您填写的邮箱，您将收到newdex给您发的邮件。邮件内容包括您的api_key及secret_key，同时还包括一个16位的code（验证码，有效期1天），接着请使用您填写的EOS账号往newdex的验证账号转任意数量的EOS（建议转账0.0001 EOS，此金额不会返还）  
