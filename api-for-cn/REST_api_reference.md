@@ -140,6 +140,7 @@ id | array | 交易ID
 price | double | 交易价格
 amount | double | 成交量
 volume | double | 成交额（转成计价币种，如EOS、USDT）
+time | int | 10位数字时间戳
 
 ## GET /v1/candles
 
@@ -215,8 +216,8 @@ deal_price | double | 成交价（均价）
 deal_amount | double | 成交量
 deal_volume | double | 成交额（转成计价币种，如EOS、USDT）
 state | double | 状态：new（未成交），partially-filled（部分成交），filled（已成交），canceled（已撤单），partial-canceled（已撤单有部分成交）
-created_at | long | 创建时间戳
-updated_at | long | 更新时间戳
+created_at | int | 创建时间，10位数字时间戳
+updated_at | int | 更新时间，10位数字时间戳
 
 ## GET /v1/order/cancel
 
