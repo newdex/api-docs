@@ -10,7 +10,11 @@ https://api.newdex.io
 
 ### 申请APP_KEY
 
-Newdex的api_key需要和EOS账号绑定，详情请参考[申请Newdex交易行情API_KEY](/api-for-cn/signup_app_key.md)
+Newdex的api_key需要和EOS账号绑定，详情请参考[申请Newdex交易行情API_KEY](/api-for-cn/signup_app_key.md)  
+
+### 如何下单
+
+因为Newdex是去中心化交易所，下单需要使用用户私钥签名，Newdex不会触碰用户的私钥，所以交易API中并不包括下单的API，用户需要自己去实现下单逻辑。具体如何下单请可以参考[如何通过编程在Newdex下单](/api-for-cn/how_to_make_order.md)  
 
 ## REST行情、交易API
 
