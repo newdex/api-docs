@@ -29,7 +29,51 @@ channel：渠道名，此字段值固定为“API”
 
 ### 使用cleos发起转账
 
-cleos是EOS官方发布的命令行工具，适合在Mac OS及Linux系统中使用。文档待完成...
+cleos是EOS官方发布的命令行工具，建议使用包管理安装eosio.cdt（目前中支持MacOS和Linux主流发行版本）,详细请参考：https://github.com/EOSIO/eosio.cdt  
+通过命令行方式调用cleos，常用命令如下：  
+#### 创建钱包  
+```
+cleos wallet create
+```
+创建后会在屏幕上显示您的钱包密码，请务必保管好。
+
+#### 解锁钱包  
+```
+cleos wallet unlock
+```
+通过密码解锁钱包，只有解锁后才能执行转账等操作
+
+#### 导入私钥
+```
+cleos wallet import ${private_key}
+```
+private_key是您的eos账号私钥。
+
+#### 发起转账
+发起一转转账命令如下：
+```
+cleos push action ${contract} transfer '{"from":"${account}","to":"newdexpocket","quantity":"${quantity}","memo":"${memo}"}' -p ${account}
+```
+account: 您的EOS账号名  
+contract: 币种的合约名，eos的合约名是：eosio.token  
+quantity: 转账数量，必须包括币种符号，且小数位数必须和此token的发行精度一致，如eos是4位，格式是：1.1000 EOS  
+memo: memo必须按照上面介绍的写法填写  
+
+#### 其它说明
+如果您没有在本地搭建EOS节点，节点需要单独指定，如下：
+```
+cleos -u https://eos.newdex.io get info
+cleos -u https://eos.newdex.io -p eosaccount push action eosio.token transfer ...
+```
+这边列一些常用节点，大家可以根据延迟自行选择：  
+https://eos.newdex.io  
+https://openapi.eos.ren  
+https://api.eosbeijing.one  
+https://mainnet.meet.one  
+https://nodes.eos42.io  
+
+
+更多的cleos命令，请参考：https://developers.eos.io/eosio-cleos/reference
 
 ### 通过nodejs发起转账
 
