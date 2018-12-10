@@ -21,15 +21,15 @@ type：下单类型，有四种，分别是 buy-limit（限价买入），buy-ma
 symbol：交易对名称，是由“合约名+币种名+交易区名”组合而成  
 price：交易价格，如果是市价单，此字段可以不填  
 channel：渠道名，此字段值固定为“API”  
-特别说明：对于买单，您必须使用交易区的计价货币转账，比如symbol为eosblackteam-black-eos，则您必须转账EOS。您的转账金额除去价格即为购买数量。对于卖单，直接转您要卖的token即可。
+特别说明：对于买单，您必须使用交易区的计价货币转账，比如symbol为eosblackteam-black-eos，则您必须转账EOS。您的转账金额除以价格即为购买数量。对于卖单，直接转您要卖的token即可。
 
 ## 如何发起转账
 
 因为需要转账，所以就必须要与节点通讯，用户将组装好的转账信息通过私钥签名发送给节点广播出去便完成了一笔转账过程。下面介绍两种方式可以实现与节点的通讯和转账。
 
-### 使用cleos发起转账
+### 1、使用cleos发起转账
 
-cleos是EOS官方发布的命令行工具，建议使用包管理安装eosio.cdt（目前中支持MacOS和Linux主流发行版本）,详细请参考：https://github.com/EOSIO/eosio.cdt  
+cleos是EOS官方发布的命令行工具，建议使用包管理安装eosio.cdt（目前只支持MacOS和Linux主流发行版本）,详细请参考：https://github.com/EOSIO/eosio.cdt  
 通过命令行方式调用cleos，常用命令如下：  
 #### 创建钱包  
 ```
@@ -75,6 +75,6 @@ https://nodes.eos42.io
 
 更多的cleos命令，请参考：https://developers.eos.io/eosio-cleos/reference
 
-### 通过nodejs发起转账
+### 2、通过nodejs发起转账
 
 文档待完成...
