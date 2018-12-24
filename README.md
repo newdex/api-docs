@@ -1,98 +1,36 @@
-# Public REST API for Newdex
+## APIExplanation
 
-# General API Information
+### Exchange
 
-* The base endpoint is: **https://api.newdex.io**
-* All endpoints return either a JSON object or array.
-* Any endpoint can return an ERROR; the error payload is as follows:
-```javascript
-{
-  "code": -1121,
-  "msg": "Invalid symbol."
-}
-```
+https://newdex.io
 
-# Public API Endpoints
+### API Request Path
 
-## GET /v1/common/symbols
+https://api.newdex.io
 
-Get all the trading assets in Newdex
+### Apply for APP_KEY
 
-Request: None
+Newdex api_key needs to be binded with EOS account. For more details please refer to [Apply for Newdex Market API_KEY]
+(/api/signup_app_key.md)  
 
-Response: Array
+### How to Place Order
 
+Since Newdex is a decentralized exchange and place order needs signature using user’s private key, while Newdex keeps clear of user’s private key, the Trade API does not include API of placing order. Users need to implement the order logic by their own. For more details please refer to [How to Place Order on Newdex through Coding]
+(/api/how_to_make_order.md)  
 
-Name | Data type | Description 
------------- | ------------ | ------------
-symbol | string | for example. eosblackteam-black-eos
-contract | string | contract name
-currency | string | currency name
-price_precision | int | 
-currency_precision | int | 
+## REST Market and Trade API
+
+* [Signature Verification](/api/REST_authentication.md)
+* [Request and Response Format Explanation](/api/REST_request_response.md)
+* [API Reference](/api/REST_api_reference.md)
+* [Error Code](/api/REST_error_code.md)
 
 
-## GET /v1/ticker
+## WebSocket行情、交易API
 
-Trade summary of a trading day for a symbol
-
-Request: 
+敬请期待
 
 
-Parameter | Data type | Description
------------- | ------------ | ------------
-symbol | string | 
+## 中文文档
 
-Response: Object
-
-
-Name | Data type | Description
------------- | ------------ | ------------
-symbol | string | 
-contract | string | contract name
-currency | string | currency name
-last | double | latest price
-change | double | the price changes from 08:00 GMT
-high | double | highest price
-low | double | lowest price
-amount | double | amount of this currency
-volume | double | volume of eos
-
-## GET /v1/ticker/all
-
-Trade summary of a trading day for all symbols
-
-Request: None
-
-
-Name | Data type | Description
------------- | ------------ | ------------
-symbol | string | 
-contract | string | contract name
-currency | string | currency name
-last | double | latest price
-change | double | the price changes from 08:00 GMT
-high | double | highest price
-low | double | lowest price
-amount | double | amount of this currency
-volume | double | volume of eos
-
-
-## GET /v1/ticker/price
-
-The price of a symbol
-
-Request: 
-
-
-Parameter | Data type | Description
------------- | ------------ | ------------
-symbol | string | 
-
-Response: Object
-
-
-Name | Data type | Description
------------- | ------------ | ------------
-symbol | string | 
-price | double | latest price
+[中文文档请点击这里查看](/README_zh.md)
