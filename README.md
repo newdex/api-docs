@@ -28,7 +28,7 @@ Since Newdex is a decentralized exchange and place order needs signature using u
 
 Please stay tuned 
 
-
-## 中文文档
-
+  
+  
+  
 [中文文档请点击这里查看](/README_zh.md)
