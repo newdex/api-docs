@@ -71,7 +71,7 @@ cleos -u https://eos.newdex.io -p eosaccount push action eosio.token transfer ..
 ```
 Here are some common nodes that you can choose based on the latency:  
 https://eos.greymass.com  
-https://eos.newdex.io  
+https://eos.newdex.top  
 https://openapi.eos.ren  
 https://api.eosbeijing.one  
 https://mainnet.meet.one  
