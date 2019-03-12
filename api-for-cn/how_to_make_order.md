@@ -66,7 +66,7 @@ cleos -u https://eos.newdex.io get info
 cleos -u https://eos.newdex.io -p eosaccount push action eosio.token transfer ...
 ```
 这边列一些常用节点，大家可以根据延迟自行选择：  
-https://eos.newdex.top 
+https://eos.newdex.one 
 https://openapi.eos.ren  
 https://api.eosbeijing.one  
 https://mainnet.meet.one  
