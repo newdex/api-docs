@@ -31,7 +31,7 @@ API 请求在通过 Internet 发送的过程中极有可能被篡改。为了确
 ### 计算签名所需的步骤：
 
 规范要计算签名的请求 因为使用 HMAC 进行签名计算时，使用不同内容计算得到的结果会完全不同。所以在进行签名计算前，请先对请求进行规范化处理。我们以上面请求为例进行说明
-https://api.huobi.pro/v1/order/orders?
+https://api.newdex.io/v1/order/orders
 
 -  将请求参数按照ASCII码的顺序进行排序，并去除sing字段，得到下面的结果
 ```
