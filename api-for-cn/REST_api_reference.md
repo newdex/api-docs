@@ -230,3 +230,5 @@ updated_at | int | 更新时间，10位数字时间戳
 trx_id | string | 链上trx_id
 
 返回参数: 字符串，如果成功，返回 "Order successfully canceled"
+
+**注意：此接口只支持委托账号是newdexpocket的订单，委托账号是newdexpublic的订单只能通过执行合约来取消**
