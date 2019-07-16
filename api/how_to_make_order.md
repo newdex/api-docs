@@ -61,6 +61,8 @@ contract: Token’s contract name, eos contract name is eosio.token
 quantity: transfer quantity, must contains currency symbol, and the number of decimal place must be in accord with the distributed currency precision, that is, if the distributed accuracy of EOS is 4 decimal places, the format should be 1.1000 EOS  
 memo: the format of memo should follow the discretion above.  
 
+**Note: Our entrusted account is switching to newdexpublic**
+
 #### Notes
 
 If you haven’t set up with a node in local, the node needs to be specified separately, as follows:
