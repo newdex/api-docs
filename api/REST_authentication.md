@@ -33,7 +33,7 @@ An API request is most likely to be tampered with while it is being sent over th
 ### Steps for signature computation:
 
 Specify the signature computation request. When running signature computation using HMAC, with different content the result of computing will be completely different. Therefore before running the signature computation, please standardize the request first. Let’s explain based on the request above  
-https://api.huobi.pro/v1/order/orders
+https://api.newdex.io/v1/order/orders
 
 -  Sort the request parameters in the order of the ASCII codes and remove the sing field to get the following results
 
