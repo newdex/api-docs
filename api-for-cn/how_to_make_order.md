@@ -54,6 +54,7 @@ private_key是您的eos账号私钥。
 ```
 cleos push action ${contract} transfer '{"from":"${account}","to":"newdexpocket","quantity":"${quantity}","memo":"${memo}"}' -p ${account}
 ```
+注意：我们的委托账号慢慢在切换成newdexpublic
 account: 您的EOS账号名  
 contract: 币种的合约名，eos的合约名是：eosio.token  
 quantity: 转账数量，必须包括币种符号，且小数位数必须和此token的发行精度一致，如eos是4位，格式是：1.1000 EOS  
