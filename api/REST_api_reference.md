@@ -219,7 +219,7 @@ updated_at | int | Update time, 10-digit timestamp
 
 User revokes order.
 
-**Note: this interface only supports orders (account: newdexpocket), and orders (account: newdexpublic) can only be cancelled by contract.**
+**Note: this interface only supports old orders (account: newdexpocket), and the orders which created by contract (account: newdexpublic) can only be cancelled by contract action.**
 
 Request:  
 
