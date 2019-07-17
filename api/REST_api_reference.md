@@ -201,6 +201,7 @@ Response Object[]
 Name | Data type | Description
 ------------ | ------------ | ------------
 id | int | Order ID
+pair_id | int | Exchange pair id
 trx_id | string | Trx ID on chain
 side | string | Trade direction: sell, buy
 type | string | Trade type: sell-limit, sell-market, buy-limit, buy-market
@@ -218,6 +219,8 @@ updated_at | int | Update time, 10-digit timestamp
 
 User revokes order.
 
+**Note: this interface only supports orders (account: newdexpocket), and orders (account: newdexpublic) can only be cancelled by contract.**
+
 Request:  
 
 Name | Data type | Description
@@ -226,3 +229,5 @@ trx_id | string | Trx ID on chain
 
 
 Response: String, If succeeded, response "Order successfully canceled"
+
+
