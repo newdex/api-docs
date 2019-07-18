@@ -18,7 +18,7 @@ Since Newdex is a decentralized exchange and place order needs signature using u
 
 ### How to Cancel Order
 
-Execute contract: cleos push action newdexpublic cancelorder '{"order_id": $order_id,"owner": $your_account,"pair_id": "$pair_id","auth_type": 1}' -p $your_account
+Execute contract: cleos push action newdexpublic cancelorder '{"pair_id": "$pair_id","order_id": $order_id}' -p $your_account
 
 ## REST Market and Trade API
 
