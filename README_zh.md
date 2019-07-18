@@ -19,7 +19,7 @@ Newdex的api_key需要和EOS账号绑定，[申请Newdex交易行情API_KEY](htt
 ### 如何取消订单
 
 取消订单需要通过执行合约来完成
-cleos push action newdexpublic cancelorder '{"order_id": $order_id,"owner": $your_account,"pair_id": "$pair_id","auth_type": 1}' -p $your_account
+cleos push action newdexpublic cancelorder '{"pair_id": "$pair_id","order_id": $order_id}' -p $your_account
 
 
 ## REST行情、交易API
