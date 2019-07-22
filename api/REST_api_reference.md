@@ -192,8 +192,8 @@ Request:
 
 Name | Data type | Description
 ------------ | ------------ | ------------
+state | string | Status, options: pending(default), filled, canceled
 symbol | string | (optional)Exchange pair name
-state | string | (optional)Status, options: pending, filled, canceled
 size | int | (optional)Request count, defaulted 20, 50 maximum
 
 Response Object[]  
