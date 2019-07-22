@@ -197,7 +197,7 @@ size | int | （可选）数量，默认100，最大2000
 参数名 | 类型 | 描述 
 ------------ | ------------ | ------------
 symbol | string | （可选）交易对名称
-state | string | （可选）状态，可选值:pending（挂单中），filled（已成并），canceled（已撤单）
+state | string | （可选）状态，可选值:pending（挂单中,默认），filled（已成交），canceled（已撤单）
 size | int | （可选）数量，默认20，最大50
 
 返回参数: Object数组，结构如下  
