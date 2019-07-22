@@ -192,7 +192,7 @@ Request:
 
 Name | Data type | Description
 ------------ | ------------ | ------------
-state | string | Status, options: pending(default), filled, canceled
+state | string | Status, options: pending(default), filled, canceled, history(filled or canceled)
 symbol | string | (optional)Exchange pair name
 size | int | (optional)Request count, defaulted 20, 50 maximum
 
