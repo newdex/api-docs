@@ -196,7 +196,7 @@ size | int | （可选）数量，默认100，最大2000
 
 参数名 | 类型 | 描述 
 ------------ | ------------ | ------------
-state | string | 状态，可选值:pending（挂单中,默认），filled（已成交），canceled（已撤单）
+state | string | 状态，可选值:pending（挂单中,默认），filled（已成交），canceled（已撤单），history（包括filled以及canceled）
 symbol | string | （可选）交易对名称
 size | int | （可选）数量，默认20，最大50
 
