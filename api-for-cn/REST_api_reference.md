@@ -9,7 +9,10 @@
 
 参数名 | 类型 | 描述 
 ------------ | ------------ | ------------
+id | int | symbol id = pair id
 symbol | string | 交易对名称，如：eosblackteam-black-eos
+contract | string | 合约名称，如：eosio.token
+currency | string | 币种名称，如：EOS
 price_precision | int | 在Newdex的最小价格精度
 currency_precision | int | 此币种的最小精度
 
