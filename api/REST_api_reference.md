@@ -7,7 +7,10 @@ Response: Object[]
 
 Name | Data type | Description
 ------------ | ------------ | ------------
+id | int | Exchange pair id
 symbol | string | Exchange pair name, such as: eosblackteam-black-eos
+contract | string | Contract name, such as: eosblackteam
+currency | string | Currency name, such as: BLACK
 price_precision | int | The price precision on Newdex
 currency_precision | int | The currency precision  
 
