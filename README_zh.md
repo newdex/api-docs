@@ -7,6 +7,7 @@ https://newdex.io
 ### API请求路径
 
 https://api.newdex.io
+(此域名在中国大陆无法直接访问，可暂时使用 https://api.newdex.vip 替代)
 
 ### 申请APP_KEY
 
