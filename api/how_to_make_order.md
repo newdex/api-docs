@@ -29,7 +29,7 @@ It needs to communicate to nodes when you need to transfer. User send the assemb
 
 ### 1、Transfer via cleos command
 
-Cleos is the EOS official command line tool, it is recommended that you install eosio.cdt using package management (currently only supports MacOS and Linux mainstream distributions). For details, see: https://github.com/EOSIO/EOSIO.cdt. Call cleos through the command line method, using the following common commands:
+Cleos is the EOS official command line tool, it is recommended that you install EOS using package tools (currently only supports MacOS and Linux mainline distributions). For details, see: https://github.com/EOSIO/eos. Call cleos through the command line method, using the following common commands:
 
 #### Create wallet  
 ```
