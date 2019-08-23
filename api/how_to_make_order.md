@@ -54,7 +54,7 @@ private_key is the private key of your EOS account.
 
 The command of push a transfer action is shown as follows:
 ```
-cleos push action ${contract} transfer '{"from":"${account}","to":"newdexpocket","quantity":"${quantity}","memo":"${memo}"}' -p ${account}
+cleos push action ${contract} transfer '{"from":"${account}","to":"newdexpublic","quantity":"${quantity}","memo":"${memo}"}' -p ${account}
 ```
 account: Your EOS account name  
 contract: Token’s contract name, eos contract name is eosio.token  
