@@ -68,8 +68,8 @@ memo: the format of memo should follow the discretion above.
 If you haven’t set up with a node in local, the node needs to be specified separately, as follows:
 
 ```
-cleos -u https://eos.newdex.io get info
-cleos -u https://eos.newdex.io -p eosaccount push action eosio.token transfer ...
+cleos -u https://eos.newdex.one get info
+cleos -u https://eos.newdex.one -p eosaccount push action eosio.token transfer ...
 ```
 Here are some common nodes that you can choose based on the latency:  
 https://eos.greymass.com  
