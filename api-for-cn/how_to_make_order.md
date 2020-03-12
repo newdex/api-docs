@@ -79,7 +79,7 @@ https://nodes.eos42.io
 ### 2、通过nodejs发起转账
 
 如果您的开发环境是Windows，建议您使用eos官方提供的eosjs(https://github.com/EOSIO/eosjs)。
-如果您不是使用js做开发语言，您可以使用eosjs搭建一个简易的本地http服务器提供交易的中转，示例代码见： https://github.com/newdex/eosjs-api
+如果您不是使用js做开发语言，您可以使用eosjs搭建一个简易的本地http服务器提供交易的中转。
   
   
 最后，有更多问题，请联系 tech@newdex.io
