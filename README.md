@@ -31,6 +31,8 @@ Execute contract: cleos push action newdexpublic cancelorder '{"pair_id": "$pair
 ## WebSocket Market and Trade API
 
 Please stay tuned 
-  
+
+## Smart Contract API
+  [Buy order and sell order table structure](/api/order_table_structure.md)
    
 [中文文档点击这里查看](/README_zh.md)
