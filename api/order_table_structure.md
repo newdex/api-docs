@@ -33,6 +33,13 @@ TABLE exchange_pair {
 };
 ```
 
+## helper functions
+```
+uint64_t uint64_hash(const string& hash) {
+    return std::hash<string>{}(hash);
+}
+```
+
 ## Currency table structure
 ```
 TABLE currency {
