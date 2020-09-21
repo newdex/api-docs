@@ -33,13 +33,6 @@ TABLE exchange_pair {
 };
 ```
 
-## helper functions
-```
-uint64_t uint64_hash(const string& hash) {
-    return std::hash<string>{}(hash);
-}
-```
-
 ## Currency table structure
 ```
 TABLE currency {
@@ -109,7 +102,14 @@ typedef eosio::multi_index<"buyorder"_n, order,
   indexed_by< "byprice"_n, const_mem_fun<order, uint128_t, &order::get_price> >,
   indexed_by< "byname"_n, const_mem_fun<order, uint64_t, &order::get_name> >
   > sell_order_t;
-  ```
+```
+
+## helper functions
+```
+uint64_t uint64_hash(const string& hash) {
+    return std::hash<string>{}(hash);
+}
+```
   
 ## Use
   
